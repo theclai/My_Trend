@@ -1,0 +1,500 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="Symbol_Settings_Symbol_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Symbol_Settings_Chart_ID_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Symbol_Settings_Segment_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Symbol_Settings_Chart_Symbol_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Symbol_Settings_Inst_Name_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Symbol_Settings_Expiry_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="TP_SL_Precent_N_Points.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Take_Profit_Settings_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Stop_Loss_Settings_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Profit_Limit_PL_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Loss_Limit_PL_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Symbol_Settings_Order_QTY__Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Disc_QTY_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Exchange_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="QTY_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Order_ID_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Buy_Sell_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Order_Symbol_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Order_Instrument_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Strike_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Order_Expiry_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Order_Price_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Order_Validity_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Order_Type_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Prod_Type_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Status_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Days_Trades_Chart_ID_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Days_Trades_Segment_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Days_Trades_Symbol_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Days_Trades_Inst_Name_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Days_Trades_Order_Type_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Days_Trades_Prod_Type_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Days_Trades_Expiry_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Days_Trades_Order_QTY_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Days_Trades_Disc_QTY_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Days_Trades_Price_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Days_Trades_Page_Buy_Sell_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Take_Profit_P_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Stop_Loss_P_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Profit_Limit_PL_Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Loss_Limit_PL_Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Trade_RMS_PL_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="State_In_Plugin_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Time_In_Plugin.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Open_Positions_Page_SI_No_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Open_Positions_Page_Chart_ID_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Open_Positions_Page_Segment_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Open_Positions_Page_Symbol_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Inst_Name_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Open_Positions_Page_Order_Type_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Open_Positions_Page_Product_Type_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Open_Positions_Page_Strike_Price_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Open_Positions_Page_Expiry_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Open_Positions_Page_Order_QTY_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Open_Positions_Page_Price_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Open_Positions_Page_Status_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Open_Positions_Page_Buy_Sell_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Take_Profit_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Stop_Loss_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Profit_Limit_PL.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Loss_Limit_PL.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Open_Positions_Page_Client_ID_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Open_Positions_Page_Date_Time_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Open_Positions_Page_Open_QTY_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Open_Positions_Page_Todays_PL_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Open_Positions_Page_Current_PL_Column.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="label3.Text" xml:space="preserve">
+    <value>
+
+
+
+
+
+
+
+                                                  Phone no : 
+
+                                                  Website : 
+
+                                                  Facebook : </value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAMDAAAAEAIACoJQAAFgAAACgAAAAwAAAAYAAAAAEAIAAAAAAAACQAAMMOAADDDgAAAAAAAAAA
+        AAD////////////////////////////////////////////////+////////////////////////////
+        ///+/////////////////////f/9//z89//8+PD/+fbs//j06//49er/+fft//v58v/7/ff/////////
+        //////////////////////////////7////9////////////////////////////////////////////
+        //////////////////////////////////////////////7+/v/+/v7//f39//39/f/9/f3//v7+////
+        ///+/////v//////////////8vDl/+LPs//BnnD/rYZO/615N/+qaSH/ol4Q/6JcCv+oYg7/sWkZ/7Vz
+        KP+1gT7/uo9Y/9GsgP/x4MT//P31////////////////////////////////////////////////////
+        ///////////////////////////////////9/f3//Pz8//39/f/8/Pz//Pz8//z8/P/9/f3//f39//z8
+        /P/+/v7/////////////////+/v6/93Z0P/Dq4v/y62D/8GtgP/GrH3/0baM/9O4jf/MsYL/x6py/8SP
+        Sf+taRT/olYA/6BPAP+oUQD/plAA/6NQAP+kXgz/sXw8/76hef/t59j////////////+/////f39//z8
+        /P/8/Pz//f39///////////////////////////////////////+/v7//v7+//7+/v//////////////
+        //////////////z8/P/+/v7/////////////////8vDr/9XQwv/w7eP////2////////////////////
+        /////////////////P/59ej/1smu/8GbZv+wdi3/plsC/6hUAP+rVwD/p1UA/5xOAP+raBv/1LaK//Xy
+        6f//////+/z9//r6+v/6+vr/+vr6//z8/P///v7/////////////////////////////////////////
+        //////////////////////////////z9/P/+/v7/////////////////////////////////////////
+        ///////////////////////////////////////////////////6+u3/5tCr/7yLSP+oXwf/qFYA/6xa
+        AP+oVgD/n1IA/6dyMf/ZwaD//fz5/////////////Pz8//r6+v/8/f3/////////////////////////
+        ///+/v7//f39//39/f/+/v7//v////////////////////z9/P/+/v7/////////////////////////
+        ////////+vz3//P16//08eD/9e3Z//Tv3v/09ur//P/5/////////////P7///3////+//////////z/
+        /v/dzrL/s342/6daAP+uXQP/rV0G/6pXAP+jVAD/v5BW//Lt4////////v7///v7+//7+/v//v7+//39
+        /f/+/v7////////////+/v7/+vr6//r6+v/6+vr//Pv7//////////////////39/f/+/v7/////////
+        /////////Pzx/+/jwP/PrXv/tItN/591MP+kcSb/pm4f/6VwI/+kdzD/uJBR/9m5hf/15sX/+frq////
+        ////////+/r7//v8/f//////+/bm/8WfZ/+kXgf/qloA/61fBf+uYQX/olcA/6t5Ov/48eD///////r6
+        +//7+/v//f39//r6+v/8/Pz///////////////////////7+/v/9/Pz/+vr6//v8/P///////f////39
+        /f///////////+nj0v/Fqn3/t4U9/6lqDv+rYAD/rWAA/7FjAv+uYgP/ql4A/69jBf+wYgT/q14A/6xh
+        AP+vbxH/voo4/86ygf/y8OL////////////9/v///P3///v/+//bwZX/q2YL/69gAf+vZAn/r2QF/6pd
+        AP+wfT//7unb//3////7+/v//f39//r6+v/8/Pz//////////////////////////////////P39//n6
+        +v/8/f3////////////58N3/yKRr/65uFf+oXQD/r2IA/65hAv+wZAX/r18A/69hAf+vYwX/rGAD/7Bl
+        Cf+tYgX/rmEG/65fBf+sXQH/rV0A/6lgAP+8fiP/0K9w//v45P//////+fr5//z+/v//////3s6t/6tu
+        HP+sYQD/tGgH/7drBP+qXQD/rXQq/+7hzP///////f39//r6+v/8/Pz////////////+/v///Pz8//r6
+        +v/7+/v/+/v7//r6+v/9/v///////9PCo/+udin/sGQA/7VoA/+xZAL/r2QG/69jBf+yZgb/smQB/7Nl
+        Af+0aAX/sWYE/7RqCf+wZgT/sGUF/7FkCf+uYwj/r2EH/6teA/+uYAT/rGMA/7iFM//i2bz///////3/
+        ///8/P3//////+DSrP+qbRb/s2cD/7ltAv+5bQD/r2IA/696N//z7+b///////r6+v/8/Pz/////////
+        ///8+/z/+fn5//v7+//9/P3/+/v7//v8/v/9/fv/07WE/6RiBv+yaAD/uG0J/7JmB/+uZAL/smcG/7Jn
+        Bv+2awj/tWoB/7ZsA/+2bQf/s2oE/7duCv+0awf/tWoI/7VqB/+yZwb/tGgJ/61iBf+uZAv/ql4F/6xf
+        AP+7gCX/69+6///////7/P7/+vr7///////Ywpn/q2MC/7xxAv+7cAH/v3YF/61iAP/Jpnr//v/+//r6
+        +v/8+/v////////////6+vr/+/v8//////////////////38+f/HqHz/p18C/7htBf+2bAr/smYG/7Rq
+        Cv+1aAP/uG0G/7ZtB/+3bgf/uXEH/7lyCP+5cQj/tW4E/7lyCP+6cgn/t28I/7duBv+1awP/sWcH/7Bn
+        Cv+0agv/sGII/6xfB/+uYQD/tHsh/+bZtP//////+fr7//7+//////j/yqFj/7JpAP++dgb/v3kI/8F6
+        Bv+kZA3/5NS+///////6+vv//Pz8//z9/f/5+vn/+/v8/////////////v/+/8+xg/+qYAD/u28A/7Vq
+        B/+zaAb/tGYA/7FoCP+mXgT/rmUF/7x1Cv+6dAb/u3MH/7x3CP+9eAn/uXME/7x2Bv++dQX/v3cG/713
+        A/++fAv/sGsE/59aCv+iWQj/sWcJ/65kB/+sXwf/r2ED/7h3Ef/o2rD//f////3+/v//////8vDk/7F9
+        Lv+7cgH/w30J/8R/Cf/BdwP/u4M9//Tx5//9/f7//Pv7//r7+//7+/v/+fr5//3+/f//////5te//6Ng
+        C/+8cQb/t2oD/69kAP+rcRz/solD/7B/MP+kYQj/jUgA/6ZhBf/AeQf/wXkF/8F6BP/Bewf/vXcD/8B5
+        Bf/CeQH/wYAM/929ev/54bP/2rhz/7JyD/+MRwD/l1ED/7NoB/+xYwX/rV4D/69fAP+5hi7/+fbk////
+        /////////////93Gmv+yagD/xXwC/8V+A//Ohgb/qmEA/8Wlef////////////7////+/v//+vv7//z9
+        ///z7eD/r3w6/7dsA/+7cQf/sWEA/7V5I//q4cL/+fv4//Xw4f/YtXD/oFwF/4pGAf+5cQT/xXwB/8R9
+        Af/Efwb/wXwF/8R+BP/DewD/2LBX//7////////////9/+HBcP+mYgH/hEIA/6ddA/+0ZgD/rl8A/6xd
+        AP+xaQH/1rt////////+//////////j05/+8fyX/wXUA/8mAAv/MgwH/yn8A/7F3LP/7+fP/////////
+        /////////v/////////DmmX/rWAA/8J3B/+zZQD/rmYH/+fTqf/////////////////689r/rnMY/4VB
+        AP+rZgP/y4MB/8mCAf/Kgwf/xoEG/8mDBf/HfgD/4sWD//////////////////774//Ikin/jEoA/5VQ
+        Av+2aQL/sGMA/69hAv+uYgT/uXoY//DpzP///////v/////////Zvo//tWwA/8qCAf/NhQD/2JEE/7hu
+        Av/XvJn//////////////////////+rj0f+rZxH/wXQB/7luAv+yYQD/snge//r65v//////////////
+        ///6897/rXUc/4VCAP+saQT/zYgB/82FAP/OiAT/zYgF/82HA//LggD/4sWE////////////////////
+        /f/Zqk7/nFcA/5FLA/+0aQT/s2cB/7FjAP+tXgH/smMA/9W3df/////////////////w6dT/rG0O/8l/
+        AP/RiQH/1Y8C/8t/AP+5i1H//v/8/////////////////8Sic/+wYgD/w3kC/7NmAP+zZAD/tXwk//n5
+        6P/+///////+///////5893/rXYc/4VCAP+vawX/04wB/9GKAP/SiwD/0owA/9KKAP/PhgD/5MeE////
+        /////////////////v/dtGD/ol4F/45KAf+1awP/tmoA/7NjAf+vXwD/rVsA/7uEJ//59d3/////////
+        ///8/fj/uY1K/8R4AP/UjQH/1Y8A/9WNAP+3eSP/+fju/////////////Pv1/7R9Nv/BdQL/v3YG/7No
+        BP+1aQH/t34m//n46P/+///////+///////6893/sHgc/4VCAP+ybQX/2JEC/9WPAf/WkAH/1pAA/9aQ
+        AP/SigD/5smE/////////////////////v/fuGL/o2EG/45KAf+4bgP/t2wA/7RmAv+xYgH/rV4A/7Fp
+        Av/fxpH/////////////////4sqf/7x1Av/VjgH/15AA/92YAv+4cwf/3M65////////////69i+/7Bs
+        Dv/HgAr/unIL/7RrCf+5bQX/uYEq//j35//+///////////////689z/snkb/4VCAP+0cQX/3JYB/9mU
+        Af/alQH/25YA/9mUAP/WjgD/58qD/////////////////////v/juWH/qGIG/45KAf+4cAL/uG0A/7Vo
+        Af+yZAH/rl4A/7RmAP/Qq1z//v/+////////////+PPf/7Z7Gf/UiwD/2ZMB/+GdA//CeQD/wqN4////
+        ////////yaZ+/7FkAP/GfQb/tGYB/7VoAf+4awD/uIAj//n46P/////////////////689z/snob/4VC
+        AP+2cwT/35sB/92YAf/emQH/3poA/92YAP/ZkgD/6cyC/////////////////////v/ku2L/qGMI/45K
+        Af+6cgP/um8B/7dqAf+zZQH/r14B/7JkAP/LnUX//f74/////////////Pvy/7+KM//SiQD/2pQC/+Cc
+        Af/OhAD/w5Zd////////////vpRi/71xAf/EfhD/s2kH/7ZqAP+3bAD/uIAj//n46P//////////////
+        ///689z/snoc/4ZDAP+4dQT/4p4C/9+cAf/gnQD/4J4B/9+dAP/clgD/6c2D////////////////////
+        /v/lvGL/qGQI/49LAf+8cwP/u3EB/7ZsAf+0ZwD/sGAB/7BhAP/MkTX//fvy/////////////v78/8SU
+        RP/OhQD/3JsM/+CiDP/WjgH/v41L//7+/v/9//v/uY5T/8V+CP/Cegz/smYD/7drAP+5bAD/uIAj//n4
+        5//////////////////689z/snsc/4ZDAP+6dgX/5aIC/+ShAP/mowD/5qQA/+SiAP/emQD/6s6D////
+        /////////////////v/lvWP/qWUI/49LAf+9dAT/u3IA/7dtAP+0ZwH/sGEB/65gAP/GiCj/+/nr////
+        /////////////8mcVP/LggD/3psH/+KjD//bmAv/wIxF//38+v/6+vX/vIdE/8Z8Av++dAH/smUA/7hs
+        Af+5bQD/uIEj//n45////////v/////////689z/s3sc/4VDAP+7dwX/56QB/+ikAP/qqAH/6qkB/+mm
+        AP/hnAD/68+E/////////////////////v/mvWL/qWYI/49LAf++dQP/vXIA/7htAP+1aQH/sWIA/61f
+        AP/HiCf/+/nr/////////////////8qeV//JggD/3poA/+OgAv/dlwT/wIxG//v69//9/Pf/u4M7/8V7
+        AP+/dQL/s2UA/7htAP+6bwD/uIEj//n45////////v/////////689z/tHsc/4VCAP+5eAb/6aQB/+il
+        Af/sqwH/7asA/+mnAP/hnAD/6c+D/////////////////////v/lvmL/p2YI/49MAf++dQT/vXIA/7ht
+        AP+1aQH/sWIA/61gAP/EiCf/+/ns/////////////////8qeV//LgwD/3poB/+KfAf/dlQD/vYc9//v6
+        9//9/Pf/u4I6/8h9AP/AdgP/smQA/7dsAP+6bgD/uIEj//n45//////////////////6893/snoc/4VB
+        AP+5dgX/6KQB/+ekAf/qqQH/66kB/+imAP/fmgD/6c2C///////////////////////kvmb/p2YI/4tJ
+        AP+9dAT/vXIA/7huAP+1aAH/sWEB/69hAP/Iji///fvv/////////////////8qcVP/MgwD/3pkA/+Og
+        Af/elgD/vYU+//z8+f/9/vr/t4ZI/8l8AP/FewL/smQB/7drAf+5bAD/uIAj//n45///////////////
+        ///49+j/sH8l/4Q/AP+tagb/5aAE/+SgAP/mowD/56QB/+OiAP/dmQD/7tWY////////////////////
+        ///gw3r/rWsD/4ZEAP+2bwX/vHIA/7hsAP+1ZwH/sWEA/7NmAP/Mn0j//f/5/////////////v78/8WU
+        RP/PhgD/3JcB/+ShAf/bkQD/wI1N//7+////////u5Fd/8R2AP/OhAX/tGcB/7ZqAf+5bQD/t4Aj//n4
+        6P/////////////////9/vn/yp9P/4xIAP+ZVgX/3ZkI/+KfAf/hnwD/4Z8B/+CdAP/XnQ//+/DJ////
+        ///////////////////l16P/t3gG/4RBAP+kXQT/vnID/7drAf+0ZwD/r2EA/7RoAP/UsGr/////////
+        ////////+/vw/76GLv/SiAD/2pYB/+WjA//TiQD/xJZf////////////xaJ3/7xvAP/Wjgf/uW4C/7Rn
+        AP+5bAD/t38j//n46f//////////////////////5s+U/6ZhAP+FQgD/sm8H/9qYBf/hnQL/4JsA/9uT
+        AP/YrDz//P70///////////////////////8+eX/1qI1/5ZRAP+JRQH/smgE/7lsAf+1ZgH/sWEA/7d2
+        Df/t4Ln/////////////////9ezU/7d3E//UjAD/2ZUA/+yoA//HfgD/wqJ7////////////5NG4/7Fr
+        B//ZkQL/x3sD/7NmAP+3aQD/tn4i//j46P//////////////////////+vfr/8mgS/+fWgD/jkkA/6Ng
+        A/+3cgD/yYMA/8uUGP/s4rv/////////////////////////////////8OG1/7d+E/+UUQD/kEwA/5xV
+        AP+kWQD/s2wD/9vDjf//////////////////////07B6/7xxAP/VjgH/25YB/++qA/+8dwn/3dG9////
+        ////////+/ry/7N4Kv/TiQD/0ooE/7RnAf+1ZgD/tXwj//n46P////////////////////////////n2
+        5f/au3D/voMc/7N0DP+6fRb/1rBW/+7ku//////////////////+/////v////3//////////v///+7g
+        s//ToUL/tncS/69uC/+8gSL/4ciN//7++f/////////////////28uP/rXUg/8V8AP/TjAH/5KAE/+Wg
+        Av+3eyX/+vnw/////////////////72VYP/BdQD/3JcE/71xAv+yYgD/tHsj//n46P//////////////
+        /////////v//////////////+fTf/+rgvv/07dL////5//////////////////////////////////7/
+        ///+/////v///////////vL/7+fM/+bbuv/59OD////////////+//7//v/////////bwZH/sWgA/8qB
+        Af/QiwD/66sE/9aOAP+3ilP//v/+/////////////////+fawv+wawr/2ZAD/9CJBv+yYwD/s3kj//n4
+        5////////////////////////////////////////////////////////v////7/////////////////
+        //////j/4cyb//n35v/////////+/////////////////////////////////////////////////+/l
+        zP+ucRn/v3MA/8qBAf/ZlAL/8a8G/710Av/Yvp7///////////////////////////+6j1z/umwA/+Gb
+        Bf/EeAD/sXYk//v87f////////////v89P/Zvof/2bt7//j05////////////////////////f////3/
+        //////////////f25v/evW3/xH4A/9auVv/5+Ov/////////////////////////////////////////
+        ////////7eTL/72DL/+3aQD/xn0B/8uCAf/qqAb/2pAB/7F3L//8+vT/////////////////////////
+        ///y5dP/p2kc/9SLAf/dlQP/tXIO/+nZrf/49+n/8eK//7yRSP+xawD/tGwA/7eGMP/p0qL/+vnj//7+
+        9P////7////+////+v/8++v/7+Gw/8SWN/+/dwD/wXYA/712AP/JnUP/8ua//////f//////////////
+        //////////////v77f/jzJ3/rHEZ/7JmAP/AdgH/wnkA/9iSBP/yrwf/rmUA/8aof///////////////
+        ///+////////////////////2MOk/7BnAv/hmQP/1IwE/61sDP+udCP/sG0M/7ZpAP+8cAD/vXMA/71x
+        AP+5dAP/u4Yk/8mZQf/Qo1b/0qhb/86iTP/FkjL/vX0J/791AP++dAD/unEA/7lvAP+6bwD/vX4R/8yg
+        Uv/MuIT/1Mih/9PHof/Kt4f/zKJe/7Z+JP+sawb/t3IK/7lvAf+/dgD/x4AC/+6rBv/XjwD/uYU///Xy
+        7P/////////////////+/////////////////////v/9/8eleP+0awD/4pwH/9eRA/+6bAD/sWMA/7Vq
+        Af+4bAH/uW4B/7txAP+8cQD/vXAA/7twAP+6bwD/um8A/7pwAP+9cQD/vHEA/7pvAP+5bwH/t20B/7Zp
+        AP+0ZgD/smQA/7FhAP+qXwD/rGYA/6ppAP+fag//onUo/82obf/n1Kf/xJRB/7NnAP/CegH/6KUH/+ym
+        B/+oaAz/5djC///////////////////////+//////////////////////////379//EnGP/tGsA/+Wf
+        BP/emAf/vnQE/69jAP+0ZgD/tmsB/7hsAP+5bAH/uW4A/7lvAf+6bwD/um8A/7lvAP+5bgD/uWwA/7dr
+        Af+1agH/tGcB/7NmAf+yYwD/rl8A/6tcAP+sWgD/rWIA/86qYv/069P/9/jv///////cxp3/rGID/7tw
+        Af/inQf/9bEH/7pwAP/Jqn//////////////////////////////////////////////////////////
+        ///49u7/uIxT/7JoAP/bkwL/450G/8Z9A/+0aQH/r2MA/7NmAf+1aAH/tmoA/7drAf+3awH/t2wA/7dr
+        AP+2agD/tmkA/7VnAf+zZQH/s2QB/7BhAf+uXgD/q1sB/6tbAP+uZAD/yqlp//3/+f///////////+DM
+        ov+pZQz/s2YA/9mRBf/zsgj/y4IA/7B9Pf/39O3/////////////////////////////////////////
+        /////////////////v////////71/8utgP+wchn/xn0A/+CZBP/ZlAr/w3oE/7ZqAv+wYwD/sGMA/7Bj
+        AP+yZQH/s2YA/7JlAP+zZAD/smMA/7BiAP+uXwD/rV4A/61eAP+wYAD/qlwA/7NxFf/avoj////5////
+        ////////3cym/6RiEP+xYwD/2JIH//SvCf/KgAD/rnQr//Dn1f//////////////////////////////
+        /////////////////////////////////v///////v/////////n4dT/to9Y/7NuDf/GfAD/25ID/9uU
+        Bf/NhAX/wXYD/7puAv+2aAL/smUD/7BkAv+xYwL/sWQC/7RmAf+2ZwH/tmgB/7VmAP+ycQ//wJdS/+ri
+        zP////////////z/+v/Wu4r/p18G/71uAP/inAb/9LAG/8Z9AP+wgEP/9O7l///////+////////////
+        /////////////////////////////////////////////////////////////////////////////+nV
+        uP+1i0//pmcM/7pyAP/IfwD/1IsH/9SLB//RiAf/zoQK/8qAB//JfQj/xXoI/7pyAP+2bgD/rm4L/7qQ
+        S//u4cL////8////////////+PHg/7mSVv+iWgD/yH0B//GsCv/zrAn/vHMA/6x9Pv/6+Or/////////
+        /////////////////////////////////////////////////////////////////////////v////7/
+        /////////v/////////9//z/7N/J/9O8k//Knln/vHwj/7ZzEf+3dQ3/uHQM/7l1Dv+3dBD/wIIo/9Co
+        YP/XwZL/7d/D//z/+/////////////z9/f/VwqX/tHsr/7xxAP/gmAb/864H/92TAP+1awD/v5Nb//Tw
+        5///////////////////////////////////////////////////////////////////////////////
+        /////////v///////////////////////////////////////////////Pny//Tu4//r5NT/6eLP/+zk
+        0//07uL/+/nz///////////////////////49+b/3sSb/7uKQP/BfgT/4JkB/+6rCf/fmQf/t3AA/6x7
+        Of/ZxKn////8//////////7/////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////9PPt/9HMvv/p5Nr///34////
+        ///////////////////////////////++P/z7N//yruc/76UWP+0fCb/wnwG/9uUAf/poQL/z4gA/7Bp
+        AP+xdST/0rmT//f17v//////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////////////+/////P38/+Dd
+        1f++qYn/yaV7/8Gnev/CqHn/ya19/8uvfv/IrXv/xqFm/7x/NP+qZQ7/qWAA/7ZpAP/MfwD/0YUA/8R4
+        Av+wcRb/s4FC/7+nhP/w7OD/////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////////v//////
+        ///+////////////////////9fTr/+jYv//Go3n/pX1I/6l7PP+qbCX/pGMX/6toGf+ybhz/t3ci/76D
+        M/+3ikX/s4pS/9Wxh//16ND//v76///////////////////////+//7/////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////7////+/////////////////////P/+//z++P/8+vH/+vft//r3
+        7f/69+3/+Pfu//v69P/7/fv/+////////////////////////////v////7//////////////v//////
+        //////////////////////////////////////////////////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAA=
+</value>
+  </data>
+</root>
