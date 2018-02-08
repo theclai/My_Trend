@@ -13,9 +13,6 @@ using Akka.Actor;
 using Nest_Trader_Web.NestActorSystem.Actor;
 using Nest_Trader_Web.NestActorSystem.Messages;
 
-//  using HWND = System.IntPtr;
-
-
 
 namespace Nest_Trader_Web
 {
@@ -37,7 +34,7 @@ namespace Nest_Trader_Web
 
         public static ActorSystem NestActorsSystem;
 
-        public  IActorRef DayTraderSendActorRef;
+        public IActorRef DayTraderSendActorRef;
         public IActorRef APIOrderSendActorRef;
         /// <summary>Contains functionality to get all the open windows.</summary>
 
@@ -100,7 +97,7 @@ namespace Nest_Trader_Web
             NestActorsSystem = ActorSystem.Create("NestActorsSystem");
             DayTraderSendActorRef = NestActorsSystem.ActorOf(Props.Create(() => new DaysTradeSendOrderActor()),
                 "DaysTradeSendOrderActor");
-            APIOrderSendActorRef = NestActorsSystem.ActorOf(Props.Create(() => new APIOrderSendActor()),"APIOrderSendActor");
+            APIOrderSendActorRef = NestActorsSystem.ActorOf(Props.Create(() => new APIOrderSendActor()), "APIOrderSendActor");
             Form_Interactive_Class_Instance = new Form_Interactive_Class();
             Form_Thread_Class_Instance = new Form_Thread_Class();
             Meta_Trader_Class_Instance = new Meta_Trader_Class();
@@ -403,7 +400,7 @@ namespace Nest_Trader_Web
         {
             foreach (KeyValuePair<IntPtr, string> window in GetOpenWindows())
             {
-                int Process_ID; 
+                int Process_ID;
 
                 IntPtr handle = window.Key;
 
@@ -411,7 +408,7 @@ namespace Nest_Trader_Web
 
                 string title = window.Value;
 
-                Console.WriteLine("{0}: {1}: {2}", handle, title , Process_ID);
+                Console.WriteLine("{0}: {1}: {2}", handle, title, Process_ID);
 
 
                 IntPtr Get_Parent_Window = GetParent(handle);
@@ -480,7 +477,7 @@ namespace Nest_Trader_Web
 
         //---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-   
+
         /*
         public string[] Get_List_Box_Options_Shadow(IntPtr List_Box_Handle)
         {
@@ -535,7 +532,7 @@ namespace Nest_Trader_Web
             {
                 try
                 {
-                    if(DGV_Temp[DGV_Column_Index, DGV_Cnt].Value == null)
+                    if (DGV_Temp[DGV_Column_Index, DGV_Cnt].Value == null)
                     {
                         continue;
                     }
@@ -550,7 +547,7 @@ namespace Nest_Trader_Web
 
                 catch (Exception g)
                 {
-                    
+
                 }
             }
 
@@ -661,7 +658,7 @@ namespace Nest_Trader_Web
 
             Form_Thread_Class_Instance.Nest_Trader_Stop_Timer();
 
-          var t1=  Nest_Trader_Form_Instance.DayTraderSendActorRef.Ask(new DaysTradeSendOrderMessage(false, true), TimeSpan.FromSeconds(60));
+            var t1 = Nest_Trader_Form_Instance.DayTraderSendActorRef.Ask(new DaysTradeSendOrderMessage(false, true), TimeSpan.FromSeconds(60));
             await Task.WhenAll(t1);
             // Days_Trade_Send_Order(false);
 
@@ -676,31 +673,31 @@ namespace Nest_Trader_Web
             {
                 return;
             }
-            Retry_Failed_Box.Invoke((MethodInvoker) delegate
-            {
-                if (Retry_Failed_Box.Text[0].ToString().Contains("No Retry"))
-                {
-                    Nest_Trader_Class_Instance.Max_Fail_Retry_Orders = 1;
-                }
-                else
-                {
-                    try
-                    {
-                        if (!int.TryParse(Retry_Failed_Box.Text[0].ToString(),out Nest_Trader_Class_Instance.Max_Fail_Retry_Orders))
-                        {
-                            Nest_Trader_Class_Instance.Max_Fail_Retry_Orders += 1;
-                        }
-                       
-                    }
+            Retry_Failed_Box.Invoke((MethodInvoker)delegate
+           {
+               if (Retry_Failed_Box.Text[0].ToString().Contains("No Retry"))
+               {
+                   Nest_Trader_Class_Instance.Max_Fail_Retry_Orders = 1;
+               }
+               else
+               {
+                   try
+                   {
+                       if (!int.TryParse(Retry_Failed_Box.Text[0].ToString(), out Nest_Trader_Class_Instance.Max_Fail_Retry_Orders))
+                       {
+                           Nest_Trader_Class_Instance.Max_Fail_Retry_Orders += 1;
+                       }
 
-                    catch
-                    {
-                        Nest_Trader_Class_Instance.Max_Fail_Retry_Orders = 1;
-                    }
-                }
+                   }
 
-            });
-           
+                   catch
+                   {
+                       Nest_Trader_Class_Instance.Max_Fail_Retry_Orders = 1;
+                   }
+               }
+
+           });
+
             for (int Data_Grid_View_2 = 0; Data_Grid_View_2 < dataGridView2.Rows.Count; Data_Grid_View_2++)
             {
                 if (Require_Selected)
@@ -752,8 +749,8 @@ namespace Nest_Trader_Web
                         Order_Take_Profit_PL, Order_Stop_Loss_PL, Auto_Execute, true);
 
 
-                     Order_Ticket = Nest_Trader_Class_Instance.API_Order_Send(Chart_ID, Exchange_Name, Order_Symbol, Instrument_Name, Order_Type, Product_Type, Order_Expiration_Date, Order_Quantity,
-                                                          Disc_Quantity, Order_Price, Order_Buy_Sell, Order_Take_Profit, Order_Stop_Loss, Order_Take_Profit_PL, Order_Stop_Loss_PL, Auto_Execute);
+                    Order_Ticket = Nest_Trader_Class_Instance.API_Order_Send(Chart_ID, Exchange_Name, Order_Symbol, Instrument_Name, Order_Type, Product_Type, Order_Expiration_Date, Order_Quantity,
+                                                         Disc_Quantity, Order_Price, Order_Buy_Sell, Order_Take_Profit, Order_Stop_Loss, Order_Take_Profit_PL, Order_Stop_Loss_PL, Auto_Execute);
 
                     //var t1 = APIOrderSendActorRef.Ask(objRequest, TimeSpan.FromSeconds(360));
 
@@ -764,23 +761,23 @@ namespace Nest_Trader_Web
                 {
                     Order_Ticket = "-1";
                 }
-            if (Order_Ticket == "-2")
+                if (Order_Ticket == "-2")
                 {
                     continue;
                 }
 
                 try
                 {
-                    dataGridView2.Invoke((MethodInvoker) delegate
-                    {
-                        dataGridView2.Rows.RemoveAt(Data_Grid_View_2);
+                    dataGridView2.Invoke((MethodInvoker)delegate
+                   {
+                       dataGridView2.Rows.RemoveAt(Data_Grid_View_2);
 
-                        dataGridView2.Update();
-                    });
+                       dataGridView2.Update();
+                   });
                 }
                 catch (Exception ex)
                 {
-                    
+
                 }
                 if (Order_Ticket == "-1")
                 {
@@ -882,7 +879,7 @@ namespace Nest_Trader_Web
 
         public void Days_Trades_Import_From_CSV()
         {
-            if (! File.Exists(Nest_Trader_Class_Instance.Nest_Trader_Path + "Days Trades Raw.csv"))
+            if (!File.Exists(Nest_Trader_Class_Instance.Nest_Trader_Path + "Days Trades Raw.csv"))
             {
                 return;
             }
@@ -894,7 +891,7 @@ namespace Nest_Trader_Web
             {
                 string[] Column_All_Info = Get_All_Info[Get_Row_Cnt].Split(',');
 
-                if(Column_All_Info[0] == null || Column_All_Info[0] == "")
+                if (Column_All_Info[0] == null || Column_All_Info[0] == "")
                 {
                     continue;
                 }
@@ -976,7 +973,7 @@ namespace Nest_Trader_Web
             }
 
             Form_Thread_Class_Instance.Nest_Trader_Stop_Timer();
-            var t1=Nest_Trader_Form_Instance.DayTraderSendActorRef.Ask(new DaysTradeSendOrderMessage(true, true), TimeSpan.FromSeconds(120));
+            var t1 = Nest_Trader_Form_Instance.DayTraderSendActorRef.Ask(new DaysTradeSendOrderMessage(true, true), TimeSpan.FromSeconds(120));
             await Task.WhenAll(t1);
             // Days_Trade_Send_Order(true);
 
@@ -1043,7 +1040,7 @@ namespace Nest_Trader_Web
             {
                 string[] Column_All_Info = Get_All_Info[Get_Row_Cnt].Split(',');
 
-                if(Column_All_Info[0] == null || Column_All_Info[0] == "")
+                if (Column_All_Info[0] == null || Column_All_Info[0] == "")
                 {
                     continue;
                 }
@@ -1057,7 +1054,7 @@ namespace Nest_Trader_Web
 
         public string Message_Log_Buffer = "";
 
-        public void Save_Log_Messages ()
+        public void Save_Log_Messages()
         {
             int Try_Cnt = 0;
 
@@ -1093,7 +1090,7 @@ namespace Nest_Trader_Web
 
             for (int Get_Row_Cnt = 0; Get_Row_Cnt < Get_All_Info.Length; Get_Row_Cnt++)
             {
-                Form_Interactive_Class_Instance.Create_Message_On_Status_Bar(Get_All_Info[Get_Row_Cnt], false , false);
+                Form_Interactive_Class_Instance.Create_Message_On_Status_Bar(Get_All_Info[Get_Row_Cnt], false, false);
             }
         }
 
@@ -1196,7 +1193,7 @@ namespace Nest_Trader_Web
                     string Order_Expiraton_Date = Nest_Trader_Form.Nest_Trader_Form_Instance.dataGridView1[8, Data_Grid_View_1].Value.ToString();
 
 
-                    bool Order_Closed = Nest_Trader_Class_Instance.API_Order_Close(Exchange_Name, Inst_Name, Order_Symbol, Order_Qty, Order_Buy_Sell, Order_Expiraton_Date , Chart_Id , Order_Type , Prod_Type , Order_Qty , Market_Price.ToString() , Order_TP.ToString(), Order_SL.ToString(), Order_TP_PL.ToString(), Order_SL_PL.ToString(), Current_PL.ToString());
+                    bool Order_Closed = Nest_Trader_Class_Instance.API_Order_Close(Exchange_Name, Inst_Name, Order_Symbol, Order_Qty, Order_Buy_Sell, Order_Expiraton_Date, Chart_Id, Order_Type, Prod_Type, Order_Qty, Market_Price.ToString(), Order_TP.ToString(), Order_SL.ToString(), Order_TP_PL.ToString(), Order_SL_PL.ToString(), Current_PL.ToString());
 
 
 
@@ -1269,11 +1266,11 @@ namespace Nest_Trader_Web
         //-----------------------------------------------------------------------------------------------------------------------------------
         //-----------------------------------------------------------------------------------------------------------------------------------
 
-        public string Get_Safe_String(object Get_Obj , bool Double_Req = false)
+        public string Get_Safe_String(object Get_Obj, bool Double_Req = false)
         {
-            if(Get_Obj == null)
+            if (Get_Obj == null)
             {
-                if(Double_Req)
+                if (Double_Req)
                 {
                     return "0";
                 }
@@ -1319,9 +1316,11 @@ namespace Nest_Trader_Web
             {
                 if (dataGridView1.Rows.Count <= 0)
                     break;
+
                 for (int Data_Grid_View_1 = 0; Data_Grid_View_1 < Nest_Trader_Form.Nest_Trader_Form_Instance.dataGridView1.Rows.Count; Data_Grid_View_1++)
                 {
                     bool Order_Closed = false;
+
                     try
                     {
 
@@ -1570,17 +1569,9 @@ namespace Nest_Trader_Web
             Heat_Form();
         }
 
-        //-----------------------------------------------------------------------------------------------------------------------------------
-        //-----------------------------------------------------------------------------------------------------------------------------------
-        //-----------------------------------------------------------------------------------------------------------------------------------
-        //-----------------------------------------------------------------------------------------------------------------------------------
-        //-----------------------------------------------------------------------------------------------------------------------------------
-        //-----------------------------------------------------------------------------------------------------------------------------------s
-
         private void Symbol_Settings_Delete_Selected_Btn_Click(object sender, EventArgs e)
         {
             Freeze_Form();
-
 
             if (Windows_Network_Class_Instance.Nest_Trader_Outdated)
             {
@@ -1816,7 +1807,7 @@ namespace Nest_Trader_Web
 
             catch (InvalidOperationException f)
             {
- 
+
             }
         }
 
@@ -1838,13 +1829,6 @@ namespace Nest_Trader_Web
 
             Heat_Form();
         }
-
-        //-----------------------------------------------------------------------------------------------------------------------------------
-        //-----------------------------------------------------------------------------------------------------------------------------------
-        //-----------------------------------------------------------------------------------------------------------------------------------
-        //-----------------------------------------------------------------------------------------------------------------------------------
-        //-----------------------------------------------------------------------------------------------------------------------------------
-        //-----------------------------------------------------------------------------------------------------------------------------------
 
         OpenFileDialog OFD = new OpenFileDialog();
 
@@ -1881,7 +1865,7 @@ namespace Nest_Trader_Web
             Heat_Form();
         }
 
-        public void Load_File_Class(string File_Path , int File_Class_Loader = 0)
+        public void Load_File_Class(string File_Path, int File_Class_Loader = 0)
         {
             if (Windows_Network_Class_Instance.Nest_Trader_Outdated)
             {
@@ -2061,14 +2045,6 @@ namespace Nest_Trader_Web
 
         }
 
-        //-----------------------------------------------------------------------------------------------------------------------------------
-        //-----------------------------------------------------------------------------------------------------------------------------------
-        //-----------------------------------------------------------------------------------------------------------------------------------
-        //-----------------------------------------------------------------------------------------------------------------------------------
-        //-----------------------------------------------------------------------------------------------------------------------------------
-        //-----------------------------------------------------------------------------------------------------------------------------------
-
-
         public string Return_String_Null_On_Null(object Null_String)
         {
             if (Windows_Network_Class_Instance.Nest_Trader_Outdated)
@@ -2091,13 +2067,6 @@ namespace Nest_Trader_Web
                 return "";
             }
         }
-
-        //-----------------------------------------------------------------------------------------------------------------------------------
-        //-----------------------------------------------------------------------------------------------------------------------------------
-        //-----------------------------------------------------------------------------------------------------------------------------------
-        //-----------------------------------------------------------------------------------------------------------------------------------
-        //-----------------------------------------------------------------------------------------------------------------------------------
-        //-----------------------------------------------------------------------------------------------------------------------------------
 
         /*
         public string[] Get_Trade_History()
@@ -2314,12 +2283,5 @@ namespace Nest_Trader_Web
             Form_Interactive_Class_Instance.Staus_Message_Lines_Cnt = 0;
         }
 
-        //-----------------------------------------------------------------------------------------------------------------------------------
-        //-----------------------------------------------------------------------------------------------------------------------------------
-        //-----------------------------------------------------------------------------------------------------------------------------------
-        //-----------------------------------------------------------------------------------------------------------------------------------
-        //-----------------------------------------------------------------------------------------------------------------------------------
-        //-----------------------------------------------------------------------------------------------------------------------------------
-        //-----------------------------------------------------------------------------------------------------------------------------------
     }
 }

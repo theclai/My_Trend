@@ -104,19 +104,6 @@
             this.Symbol_Settings_Export_Symbols_Btn = new System.Windows.Forms.Button();
             this.Symbol_Settings_Delete_Selected_Btn = new System.Windows.Forms.Button();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.Symbol_Settings_Symbol_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Symbol_Settings_Chart_ID_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Symbol_Settings_Segment_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Symbol_Settings_Chart_Symbol_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Symbol_Settings_Inst_Name_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Symbol_Settings_Expiry_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TP_SL_Precent_N_Points = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.Take_Profit_Settings_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Stop_Loss_Settings_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Profit_Limit_PL_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Loss_Limit_PL_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Symbol_Settings_Order_QTY__Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Disc_QTY_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Trade_Archives_Page = new System.Windows.Forms.TabPage();
             this.panel14 = new System.Windows.Forms.Panel();
             this.Export_To_Csv_History = new System.Windows.Forms.Button();
@@ -191,6 +178,20 @@
             this.NEST_Settings_Label = new System.Windows.Forms.Label();
             this.Trade_Mode_Label = new System.Windows.Forms.Label();
             this.NEST_Status_Label = new System.Windows.Forms.Label();
+            this.Symbol_Settings_Symbol_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Symbol_Settings_Chart_ID_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Symbol_Settings_Segment_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Symbol_Settings_Chart_Symbol_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Symbol_Settings_Inst_Name_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Symbol_Settings_Expiry_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TP_SL_Precent_N_Points = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.Take_Profit_Settings_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Stop_Loss_Settings_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Profit_Limit_PL_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Loss_Limit_PL_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Symbol_Settings_Order_QTY__Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Disc_QTY_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TrailingStop = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.Status_Tab.SuspendLayout();
@@ -1222,104 +1223,14 @@
             this.Profit_Limit_PL_Column,
             this.Loss_Limit_PL_Column,
             this.Symbol_Settings_Order_QTY__Column,
-            this.Disc_QTY_Column});
+            this.Disc_QTY_Column,
+            this.TrailingStop});
             this.dataGridView3.Location = new System.Drawing.Point(2, 3);
             this.dataGridView3.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowTemplate.Height = 24;
             this.dataGridView3.Size = new System.Drawing.Size(1096, 252);
             this.dataGridView3.TabIndex = 0;
-            // 
-            // Symbol_Settings_Symbol_Column
-            // 
-            this.Symbol_Settings_Symbol_Column.HeaderText = "Symbol";
-            this.Symbol_Settings_Symbol_Column.Name = "Symbol_Settings_Symbol_Column";
-            this.Symbol_Settings_Symbol_Column.Width = 79;
-            // 
-            // Symbol_Settings_Chart_ID_Column
-            // 
-            this.Symbol_Settings_Chart_ID_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Symbol_Settings_Chart_ID_Column.HeaderText = "Chart ID";
-            this.Symbol_Settings_Chart_ID_Column.Name = "Symbol_Settings_Chart_ID_Column";
-            // 
-            // Symbol_Settings_Segment_Column
-            // 
-            this.Symbol_Settings_Segment_Column.HeaderText = "Segment";
-            this.Symbol_Settings_Segment_Column.Name = "Symbol_Settings_Segment_Column";
-            this.Symbol_Settings_Segment_Column.Width = 89;
-            // 
-            // Symbol_Settings_Chart_Symbol_Column
-            // 
-            this.Symbol_Settings_Chart_Symbol_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Symbol_Settings_Chart_Symbol_Column.HeaderText = "Chart Symbol";
-            this.Symbol_Settings_Chart_Symbol_Column.Name = "Symbol_Settings_Chart_Symbol_Column";
-            this.Symbol_Settings_Chart_Symbol_Column.Width = 130;
-            // 
-            // Symbol_Settings_Inst_Name_Column
-            // 
-            this.Symbol_Settings_Inst_Name_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Symbol_Settings_Inst_Name_Column.HeaderText = "Inst. Name";
-            this.Symbol_Settings_Inst_Name_Column.Name = "Symbol_Settings_Inst_Name_Column";
-            this.Symbol_Settings_Inst_Name_Column.Width = 130;
-            // 
-            // Symbol_Settings_Expiry_Column
-            // 
-            this.Symbol_Settings_Expiry_Column.HeaderText = "Expiry";
-            this.Symbol_Settings_Expiry_Column.Name = "Symbol_Settings_Expiry_Column";
-            this.Symbol_Settings_Expiry_Column.Width = 71;
-            // 
-            // TP_SL_Precent_N_Points
-            // 
-            this.TP_SL_Precent_N_Points.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.TP_SL_Precent_N_Points.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox;
-            this.TP_SL_Precent_N_Points.HeaderText = "TP / SL";
-            this.TP_SL_Precent_N_Points.Items.AddRange(new object[] {
-            "%",
-            "Points"});
-            this.TP_SL_Precent_N_Points.Name = "TP_SL_Precent_N_Points";
-            this.TP_SL_Precent_N_Points.Width = 150;
-            // 
-            // Take_Profit_Settings_Column
-            // 
-            this.Take_Profit_Settings_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Take_Profit_Settings_Column.HeaderText = "Target";
-            this.Take_Profit_Settings_Column.Name = "Take_Profit_Settings_Column";
-            this.Take_Profit_Settings_Column.Width = 130;
-            // 
-            // Stop_Loss_Settings_Column
-            // 
-            this.Stop_Loss_Settings_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Stop_Loss_Settings_Column.HeaderText = "Stop Loss";
-            this.Stop_Loss_Settings_Column.Name = "Stop_Loss_Settings_Column";
-            this.Stop_Loss_Settings_Column.Width = 105;
-            // 
-            // Profit_Limit_PL_Column
-            // 
-            this.Profit_Limit_PL_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Profit_Limit_PL_Column.HeaderText = "Max. Profit";
-            this.Profit_Limit_PL_Column.Name = "Profit_Limit_PL_Column";
-            this.Profit_Limit_PL_Column.Width = 125;
-            // 
-            // Loss_Limit_PL_Column
-            // 
-            this.Loss_Limit_PL_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Loss_Limit_PL_Column.HeaderText = "Max. Loss";
-            this.Loss_Limit_PL_Column.Name = "Loss_Limit_PL_Column";
-            this.Loss_Limit_PL_Column.Width = 125;
-            // 
-            // Symbol_Settings_Order_QTY__Column
-            // 
-            this.Symbol_Settings_Order_QTY__Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Symbol_Settings_Order_QTY__Column.HeaderText = "Order QTY";
-            this.Symbol_Settings_Order_QTY__Column.Name = "Symbol_Settings_Order_QTY__Column";
-            this.Symbol_Settings_Order_QTY__Column.Width = 105;
-            // 
-            // Disc_QTY_Column
-            // 
-            this.Disc_QTY_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Disc_QTY_Column.HeaderText = "Disc QTY";
-            this.Disc_QTY_Column.Name = "Disc_QTY_Column";
-            this.Disc_QTY_Column.Width = 105;
             // 
             // Trade_Archives_Page
             // 
@@ -1989,6 +1900,103 @@
             this.NEST_Status_Label.Size = new System.Drawing.Size(0, 17);
             this.NEST_Status_Label.TabIndex = 11;
             // 
+            // Symbol_Settings_Symbol_Column
+            // 
+            this.Symbol_Settings_Symbol_Column.HeaderText = "Symbol";
+            this.Symbol_Settings_Symbol_Column.Name = "Symbol_Settings_Symbol_Column";
+            this.Symbol_Settings_Symbol_Column.Width = 79;
+            // 
+            // Symbol_Settings_Chart_ID_Column
+            // 
+            this.Symbol_Settings_Chart_ID_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Symbol_Settings_Chart_ID_Column.HeaderText = "Chart ID";
+            this.Symbol_Settings_Chart_ID_Column.Name = "Symbol_Settings_Chart_ID_Column";
+            // 
+            // Symbol_Settings_Segment_Column
+            // 
+            this.Symbol_Settings_Segment_Column.HeaderText = "Segment";
+            this.Symbol_Settings_Segment_Column.Name = "Symbol_Settings_Segment_Column";
+            this.Symbol_Settings_Segment_Column.Width = 89;
+            // 
+            // Symbol_Settings_Chart_Symbol_Column
+            // 
+            this.Symbol_Settings_Chart_Symbol_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Symbol_Settings_Chart_Symbol_Column.HeaderText = "Chart Symbol";
+            this.Symbol_Settings_Chart_Symbol_Column.Name = "Symbol_Settings_Chart_Symbol_Column";
+            this.Symbol_Settings_Chart_Symbol_Column.Width = 130;
+            // 
+            // Symbol_Settings_Inst_Name_Column
+            // 
+            this.Symbol_Settings_Inst_Name_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Symbol_Settings_Inst_Name_Column.HeaderText = "Inst. Name";
+            this.Symbol_Settings_Inst_Name_Column.Name = "Symbol_Settings_Inst_Name_Column";
+            this.Symbol_Settings_Inst_Name_Column.Width = 130;
+            // 
+            // Symbol_Settings_Expiry_Column
+            // 
+            this.Symbol_Settings_Expiry_Column.HeaderText = "Expiry";
+            this.Symbol_Settings_Expiry_Column.Name = "Symbol_Settings_Expiry_Column";
+            this.Symbol_Settings_Expiry_Column.Width = 71;
+            // 
+            // TP_SL_Precent_N_Points
+            // 
+            this.TP_SL_Precent_N_Points.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.TP_SL_Precent_N_Points.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox;
+            this.TP_SL_Precent_N_Points.HeaderText = "TP / SL";
+            this.TP_SL_Precent_N_Points.Items.AddRange(new object[] {
+            "%",
+            "Points"});
+            this.TP_SL_Precent_N_Points.Name = "TP_SL_Precent_N_Points";
+            this.TP_SL_Precent_N_Points.Width = 150;
+            // 
+            // Take_Profit_Settings_Column
+            // 
+            this.Take_Profit_Settings_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Take_Profit_Settings_Column.HeaderText = "Target";
+            this.Take_Profit_Settings_Column.Name = "Take_Profit_Settings_Column";
+            this.Take_Profit_Settings_Column.Width = 130;
+            // 
+            // Stop_Loss_Settings_Column
+            // 
+            this.Stop_Loss_Settings_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Stop_Loss_Settings_Column.HeaderText = "Stop Loss";
+            this.Stop_Loss_Settings_Column.Name = "Stop_Loss_Settings_Column";
+            this.Stop_Loss_Settings_Column.Width = 105;
+            // 
+            // Profit_Limit_PL_Column
+            // 
+            this.Profit_Limit_PL_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Profit_Limit_PL_Column.HeaderText = "Max. Profit";
+            this.Profit_Limit_PL_Column.Name = "Profit_Limit_PL_Column";
+            this.Profit_Limit_PL_Column.Width = 125;
+            // 
+            // Loss_Limit_PL_Column
+            // 
+            this.Loss_Limit_PL_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Loss_Limit_PL_Column.HeaderText = "Max. Loss";
+            this.Loss_Limit_PL_Column.Name = "Loss_Limit_PL_Column";
+            this.Loss_Limit_PL_Column.Width = 125;
+            // 
+            // Symbol_Settings_Order_QTY__Column
+            // 
+            this.Symbol_Settings_Order_QTY__Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Symbol_Settings_Order_QTY__Column.HeaderText = "Order QTY";
+            this.Symbol_Settings_Order_QTY__Column.Name = "Symbol_Settings_Order_QTY__Column";
+            this.Symbol_Settings_Order_QTY__Column.Width = 105;
+            // 
+            // Disc_QTY_Column
+            // 
+            this.Disc_QTY_Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Disc_QTY_Column.HeaderText = "Disc QTY";
+            this.Disc_QTY_Column.Name = "Disc_QTY_Column";
+            this.Disc_QTY_Column.Width = 105;
+            // 
+            // TrailingStop
+            // 
+            this.TrailingStop.HeaderText = "Trailing Stop";
+            this.TrailingStop.Name = "TrailingStop";
+            this.TrailingStop.Width = 113;
+            // 
             // Nest_Trader_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2153,19 +2161,6 @@
         public System.Windows.Forms.Label Trade_Mode_Label;
         public System.Windows.Forms.Label NEST_Status_Label;
         public System.Windows.Forms.ProgressBar Signal_Finder_PB;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Symbol_Settings_Symbol_Column;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Symbol_Settings_Chart_ID_Column;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Symbol_Settings_Segment_Column;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Symbol_Settings_Chart_Symbol_Column;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Symbol_Settings_Inst_Name_Column;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Symbol_Settings_Expiry_Column;
-        private System.Windows.Forms.DataGridViewComboBoxColumn TP_SL_Precent_N_Points;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Take_Profit_Settings_Column;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Stop_Loss_Settings_Column;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Profit_Limit_PL_Column;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Loss_Limit_PL_Column;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Symbol_Settings_Order_QTY__Column;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Disc_QTY_Column;
         public System.Windows.Forms.LinkLabel Phone_Link_Label;
         private System.Windows.Forms.DataGridViewTextBoxColumn Days_Trades_Chart_ID_Column;
         private System.Windows.Forms.DataGridViewTextBoxColumn Days_Trades_Segment_Column;
@@ -2208,6 +2203,20 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Open_Positions_Page_Todays_PL_Column;
         private System.Windows.Forms.DataGridViewTextBoxColumn Open_Positions_Page_Current_PL_Column;
         private System.Windows.Forms.Button Clear_Log_Btn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Symbol_Settings_Symbol_Column;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Symbol_Settings_Chart_ID_Column;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Symbol_Settings_Segment_Column;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Symbol_Settings_Chart_Symbol_Column;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Symbol_Settings_Inst_Name_Column;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Symbol_Settings_Expiry_Column;
+        private System.Windows.Forms.DataGridViewComboBoxColumn TP_SL_Precent_N_Points;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Take_Profit_Settings_Column;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Stop_Loss_Settings_Column;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Profit_Limit_PL_Column;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Loss_Limit_PL_Column;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Symbol_Settings_Order_QTY__Column;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Disc_QTY_Column;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TrailingStop;
     }
 }
 
